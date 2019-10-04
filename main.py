@@ -25,7 +25,7 @@ class Search:
         results = self.search_index()  # assigns results to the above (search_index) method
         if results == -1:
             print('Out of context, Number not found')  # print value based on eval
-            second_chance = input('Do you want to try again? [yes], [y], [YES]')
+            second_chance = input('Do you want to try again? [yes], [y], [YES]')  # second chance for indexing
             if second_chance == 'yes' or 'y' or 'YES':
                 second_value = self.search_index()
                 if second_value == -1:
@@ -42,7 +42,7 @@ class Search:
 callsearch = Search()  # object instance created
 callsearch.results()   # called the results method..
 
-# hanks.. this algorithm work for linear search.
+# thanks.. this algorithm work for linear search.
 
 
 
